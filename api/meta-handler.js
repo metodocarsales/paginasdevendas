@@ -5,7 +5,7 @@ export default async function handler(req, res) {
 
   const { eventName, userData, customData, testEventCode } = req.body;
   const PIXEL_ID = '932261095827857'; // Seu ID já configurado
-  const ACCESS_TOKEN = process.env.META_ACCESS_TOKEN;
+  const ACCESS_TOKEN = process.env.EAAXZA7dXxYvABQwsZB1AcSzZBkDiS53RDyoQjgT0ZBUlmJGcEP3SmKEFgvzUcyw4fYnZCD1rvO39WshEZAJHcjLBJakDc3CZAy60mL2kZA4y6QN9y9xXzFzvn4CITJMZBd3Xj3ZC2QfyyGLFnlZChUSmooBL9TCJPO6ao4KhPZCFXTtphjpKf1NfoSHqOOF6hTDfHwZDZD;
 
   // Função interna para o Hash SHA256 obrigatório 
   const sha256 = (str) => crypto.createHash('sha256').update(str.trim().toLowerCase()).digest('hex');
